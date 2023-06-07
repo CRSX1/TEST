@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - ShopForAll</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ShopForAll</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h2>About ShopForAll</h2>
+      <p>ShopForAll is your one-stop shop for a wide range of products from trusted retailers. We strive to provide a seamless shopping experience and exceptional customer service.</p>
+      <div id="map"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 ShopForAll. All rights reserved.</p>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      var address = "SO51 7TF";
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode({ 'address': address }, function(results, status) {
+        if (status === 'OK') {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: results[0].geometry.location
+          });
+          var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+          });
+        } else {
+          console.log('Geocode was not successful for the following reason: ' + status);
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
