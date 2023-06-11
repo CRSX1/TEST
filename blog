@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - ShopForAll</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ShopForAll</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="blog">
+      <h2>Latest Blog Posts</h2>
+
+      <div class="blog-post">
+        <h3>Post Title 1</h3>
+        <p>Published on <span class="post-date">June 1, 2023</span></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula arcu quis orci ultricies tempus.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <h3>Post Title 2</h3>
+        <p>Published on <span class="post-date">May 28, 2023</span></p>
+        <p>Sed fringilla dui ac tristique dapibus. Nullam vel nulla vitae felis rutrum volutpat.</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <!-- Add more blog posts here -->
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 ShopForAll. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
